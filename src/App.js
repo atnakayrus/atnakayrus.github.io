@@ -5,7 +5,6 @@ function App() {
   const toggleTheme=()=>{
     if (theme==='light')
     {
-      console.log('>?')
         setTheme('dark');
     }
     else
@@ -14,7 +13,9 @@ function App() {
     }
 }
   return (
+    
     <div className={theme+" App"} >
+      <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'></link>
       <Home toggleTheme={toggleTheme}/>
     </div>
   );
