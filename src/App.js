@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Home from './Pages/Home'
 function App() {
-  const [theme,setTheme]=useState('light');
+  const [theme,setTheme]=useState('dark');
   const toggleTheme=()=>{
     if (theme==='light')
     {

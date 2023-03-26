@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import './styles/themes.css';
 import './styles/uiverse.css';
+import './styles/elements.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 

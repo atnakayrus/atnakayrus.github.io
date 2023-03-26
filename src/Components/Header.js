@@ -1,24 +1,19 @@
-import { React } from "react";
 const Header = (props) => {
-
-    return (
-        <div>
-
-            <div className="w-full flex flex-row items-center">
-                <div className='text-2xl font-bold p-3  mr-auto inline'>
-                <p className='text-2xl font-bold'>Surya Kanta Ghosh</p>
-                <p className='text-lg '>Front End Developer</p>
-                    
-                </div>
-                <label class="switch">
-                    <input type="checkbox" onClick={props.toggleTheme} defaultChecked={true}/>
-                    <span class="slider"></span>
-                </label>
+    return ( 
+        <>
+        <div className="Header flex flex-row p-3">
+            <div className="NameBox flex flex-col">
+                <text className="Name text-xl font-bold">Surya Kanta Ghosh</text>
+                <text className="Post ">Front End Developer</text>
             </div>
-
-            <hr />
+            <div className="Tabs ml-auto w-1/3 flex">
+                <button className="Resume ml-auto">My Resume</button>
+                <button className="Profile ml-auto">Profile</button>
+                <button className="Projects ml-auto">Projects</button>
+            </div>
         </div>
-    );
+        </>
+     );
 }
-
+ 
 export default Header;
