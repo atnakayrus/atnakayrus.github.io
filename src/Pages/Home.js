@@ -5,8 +5,8 @@ import Footer from '../Components/Footer'
 
 const Home = (props) => {
     return ( 
-        <div className="w-11/12 mx-auto max-w-[1080px]">
-            <Header toggleTheme={props.toggleTheme}/>
+        <div className="w-full mx-auto ">
+            <Header />
             <Content />
             <Footer />
         </div>

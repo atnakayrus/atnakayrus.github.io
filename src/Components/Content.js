@@ -1,24 +1,21 @@
-import Profile from '../assets/mypic.jpeg'
+import ts1 from '../styles/svgs/ts1.svg';
+import ts2 from '../styles/svgs/ts2.svg';
+
 
 const Content = () => {
     return ( 
         <>
-        <div className="Content-body flex flex-col p-3">
-            <div className="Preview-box ">
-                <div className='layer1'>
-                    <img src={Profile} alt="profile pic" className='propic'></img>
-                </div>
-                <div className='layer2'>
-                    <div className='preview-text'>
-                        <button className='download button-verse'>
-                            <span className='span-verse'>My Resume</span>
-                        </button>
-                    </div>
-                </div>
-            </div>
-            <div>
-                
-            </div>
+        <img className='fadeIn transition' src={ts1} alt='oops! my bad'></img>
+        <div className='myResume section sBlue'>
+
+        </div>
+        <img className='fadeIn transition' src={ts2} alt='oops! my bad'></img>
+        <div className='myAbout section sBlack'>
+
+        </div>
+        <img className='fadeIn transition' src={ts1} alt='oops! my bad'></img>
+        <div className='myProjects section sBlue'>
+
         </div>
         </>
      );
