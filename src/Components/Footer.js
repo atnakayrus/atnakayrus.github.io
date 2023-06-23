@@ -2,7 +2,9 @@
 const Footer = () => {
     return (
         <>
-           
+           <div className='Footer myProjects section sBlue'>
+
+</div>
         </>
     );
 }

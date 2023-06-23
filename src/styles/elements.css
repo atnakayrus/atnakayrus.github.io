@@ -43,7 +43,8 @@ body{
 }
 
 .section{
-    height: 400px;
+    min-height: 400px;
+    height: auto;
 }
 
 .transition{
@@ -56,4 +57,32 @@ body{
 
 .sBlack{
     background-color: #111111;
+}
+
+.quote{
+    border: #eeeeee 5px solid;
+}
+.quoteText{
+    max-width: 240px;
+}
+
+.resumeText{
+    max-width: 640px;
+}
+
+.limit{
+    max-width: 1080px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.myPic{
+    height: 480px;
+    width: 360px;
+    aspect-ratio: 3/4;
+    max-width: 360px;
+}
+
+.skillSection{
+    padding: 20px;
 }

@@ -8,7 +8,7 @@ const Header = () => {
                 <text className="Post text-2xl">Front End Developer</text>
             </div>
             <div className="Tabs ml-auto w-1/3 flex">
-                <button className="Resume text-xl ml-auto">My Resume</button>
+                <button className="Resume text-xl ml-auto">Home</button>
                 <button className="Profile text-xl ml-auto">Profile</button>
                 <button className="Projects text-xl ml-auto">Projects</button>
             </div>
