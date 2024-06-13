@@ -18,8 +18,11 @@ export default function Navbar() {
           <Link href={"/profile"} className="p-6 text-lg">
             Profile
           </Link>
-          <Link href={"/projects"} className="p-6 text-lg">
-            Projects
+          <Link href={"/experience"} className="p-6 text-lg">
+            Experience
+          </Link>
+          <Link href={"/portfolio"} className="p-6 text-lg">
+            Portfolio
           </Link>
         </div>
       </div>
