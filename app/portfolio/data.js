@@ -26,7 +26,7 @@ var groupProjects = [
     ],
     desc: "Created a website for one of our college faculties , Dr Sonu Saini",
     tags: ["HTML", "CSS", "Tailwind", "JavaScript"],
-    leadImg: "INRU.png",
+    leadImg: "inru.png",
     linkText:"inru.in",
     link:"https://www.inru.in"
   },
