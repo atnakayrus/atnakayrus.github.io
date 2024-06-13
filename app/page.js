@@ -13,10 +13,10 @@ export default function Home() {
               <p>To know more about me :</p>
               <div className="resumeButtons flex flex-row w-full ">
                 <button className="resumeButton bg-[#111111] text-white px-5 py-2 rounded-full mx-auto my-5">
-                  My Resume
+                  <a href="/suryakantaghosh.pdf" download="cv">My Resume</a>
                 </button>
                 <button className="resumeButton bg-[#111111] text-white px-5 py-2 rounded-full mx-auto my-5">
-                  Contact Me
+                  <a href="mailto:suryaghosh1406@gmail.com">Contact Me</a>
                 </button>
               </div>
             </div>
