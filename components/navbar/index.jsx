@@ -11,7 +11,7 @@ export default function Navbar() {
           <p className="text-2xl font-bold">Surya Kanta Ghosh</p>
           <p className="text-xl">App and web developer</p>
         </div>
-        <div className="flex flex-row h-full ">
+        <div className="flex flex-row h-full Links">
           <Link href={"/"} className="p-6 text-lg">
             Home
           </Link>
