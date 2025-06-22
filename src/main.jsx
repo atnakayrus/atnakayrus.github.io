@@ -7,6 +7,7 @@ import {
   Routes,
   Route,
   Navigate,
+  HashRouter
 } from 'react-router-dom'
 
 import Home from './pages/Home.jsx'
@@ -21,7 +22,7 @@ import Footer from './components/Footer.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <BrowserRouter>
+    <HashRouter>
     <NavBar />
       <Routes>
         <Route path="/" element={<Home />} />
@@ -37,6 +38,6 @@ createRoot(document.getElementById('root')).render(
         <Route path="/not-found" element={<NotFound />} />
       </Routes>
       <Footer/>
-    </BrowserRouter>
+    </HashRouter>
   </StrictMode>,
 )
