@@ -1,0 +1,12 @@
+@import "tailwindcss";
+
+h1{
+    font-size: xx-large;
+    font-weight: bold;
+    margin: 0;
+}
+
+h2{
+    font-size: x-large;
+    margin: 0;
+}
