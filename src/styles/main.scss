@@ -189,6 +189,7 @@ pre {
   p{
     font-size: x-large;
     align-self: center;
+    display: none;
   }
 }
 }
@@ -467,5 +468,71 @@ pre {
     }
   }
 
+}
+}
+
+.Experience{
+  width: 84%;
+  margin: 10px auto ;
+  padding: 24px;
+  .heading{
+    font-size: 32px;
+  }
+  .titlebox{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between ;
+    .title{
+      font-size:large;
+      font-weight: bold;
+    }
+    .timeline{
+      font-size:large;
+      font-weight: 800;
+    }
+  }
+  .container{
+    padding: 48px 24px;
+  }
+  ol{
+    padding: 24px;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width:576px) {
+  
+.Experience{
+  width: 100%;
+  margin: 10px auto ;
+  padding: 0px;
+  .heading{
+    padding: 6px 24px ;
+    font-size: 26px;
+  }
+  .titlebox{
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between ;
+    .title{
+      font-size:large;
+      font-weight: bolder;
+    }
+    .timeline{
+      font-size:medium;
+      font-weight: bold;
+      font-style: italic;
+    }
+  }
+  .container{
+    padding: 24px 12px;
+  }
+  ol{
+    padding: 12px;
+    margin-bottom: 20px;
+    li{
+      margin: 4px 2px;
+    }
+  }
 }
 }
