@@ -1,0 +1,23 @@
+# GitHub Action to ping Supabase and prevent pausing
+name: Keep Supabase Alive
+
+on:
+  # Schedule to run at 00:00 UTC every 5th day of the month.
+  # Use a cron schedule that works for you.
+  # See: https://crontab.guru/
+  schedule:
+    - cron: '0 0 */5 * *'
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+jobs:
+  ping-supabase:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Ping Supabase database
+        run: |
+          curl -X GET \
+          "${{ secrets.SUPABASE_URL }}/rest/v1/page_data?select=id&limit=1" \
+          -H "apikey: ${{ secrets.SUPABASE_ANON_KEY }}" \
+          -H "Authorization: Bearer ${{ secrets.SUPABASE_ANON_KEY }}"
