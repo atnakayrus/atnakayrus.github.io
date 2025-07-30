@@ -14,11 +14,11 @@ import Home from './pages/Home.jsx'
 import About from './pages/About.jsx'
 import Projects from './pages/Projects/Projects.jsx'
 import Experience from './pages/Experience.jsx'
-import Blogs from './pages/Blogs/Blogs.jsx'
-import Blogpost from './pages/Blogs/Blogpost.jsx'
 import NotFound from './pages/NotFound.jsx'
 import NavBar from './components/NavBar.jsx'
 import Footer from './components/Footer.jsx'
+import Skills from './pages/Skills.jsx'
+import Admin from './pages/Admin/Admin.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
@@ -29,8 +29,8 @@ createRoot(document.getElementById('root')).render(
         <Route path="/about" element={<About />} />
         <Route path="/projects" element={<Projects />} />
         <Route path="/experience" element={<Experience />} />
-        <Route path="/blogs" element={<Blogs />} />
-        <Route path="/blogs/:id" element={<Blogpost />} />
+        <Route path="/skills" element={<Skills />} />
+        <Route path="/admin" element={<Admin />} />
         <Route
           path="*"
           element={<Navigate to="/not-found" replace />}

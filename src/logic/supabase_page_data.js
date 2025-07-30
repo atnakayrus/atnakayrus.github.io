@@ -9,8 +9,10 @@ const loadHomepage = async () => {
 
 const loadAboutPage = async ()=>{
   let { data: page_data } = await supabase.from("page_data").select("*").eq('page','about');
-  const data = flatten(page_data)
-  return(data)
+  let { data: edu_data } = await supabase.from("education").select("*");
+  const about_data = flatten(page_data)
+  console.log(about_data,edu_data)
+  return {about_data,edu_data}
 }
 
 const loadExperiencePage = async ()=>{
@@ -19,10 +21,23 @@ const loadExperiencePage = async ()=>{
   return {work_data,personal_data}
 }
 
+const loadSkills = async ()=>{
+  let { data : page_data } = await supabase.from("page_data").select("*").eq("page","skills");
+  const data = flatten(page_data)
+  return (data)
+}
+
 const loadFooterData = async ()=>{
   let { data: page_data } = await supabase.from("page_data").select("*").eq('page','global');
   const data = flatten(page_data)
   return({'email':data.email,'github':data.github,'linkedin':data.linkedin})
 }
 
-export { loadHomepage , loadFooterData ,loadAboutPage,loadExperiencePage};
+const loadAllPages = async ()=>{
+let { data: page_data } = await supabase.from("page_data").select("*");
+  const data = flatten(page_data)
+  return(data)
+
+} 
+
+export { loadHomepage , loadFooterData ,loadAboutPage,loadExperiencePage , loadSkills , loadAllPages};

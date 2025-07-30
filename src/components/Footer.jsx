@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { loadFooterData } from "../logic/supabase_page_data";
-
+import { toggleTheme } from "../logic/globals";
 export default function Footer() {
 
     const [data,setData] = useState({})
@@ -23,9 +23,10 @@ export default function Footer() {
             <a  href={data?`mailto:${data?.email}`:"" } className="desktop" >{data?data?.email:""}</a>
             <p >Surya Kanta Ghosh</p>
             <div className="mobile">
-                <a href={data?.linkedin}><img src="/linkedin.png" alt="linkedin" className="linkedin" /></a>
-                <a href={data?.github}><img src="/github.png" alt="github" className="github" /></a>
-                <a href={data?`mailto:${data?.email}`:""}><img src="/email.png" alt="email" className="email" /></a>
+                <div className="dark_theme_button invertible" onClick={toggleTheme}><img src="/night-mode.png" alt="" /></div>
+                <a href={data?.linkedin}><img src="/linkedin.png" alt="linkedin" className="linkedin invertible" /></a>
+                <a href={data?.github}><img src="/github.png" alt="github" className="github invertible" /></a>
+                <a href={data?`mailto:${data?.email}`:""}><img src="/email.png" alt="email" className="email invertible" /></a>
             </div>
         </div>
     );
